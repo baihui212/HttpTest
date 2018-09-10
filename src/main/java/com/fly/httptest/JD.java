@@ -36,9 +36,9 @@ public class JD {
 //        submit(startDateTime, cookie, 2500);
     }
 
-    private static void couponA(String startDateTime, String cookie, String key) throws Exception {
+    private static void couponA(String startDateTime, String cookie, final String key) throws Exception {
 
-        Header[] headers = new Header[]{
+        final Header[] headers = new Header[]{
                 new BasicHeader("Host", "a.jd.com"),
                 new BasicHeader("Connection", "keep-alive"),
                 new BasicHeader("Accept", "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01"),
